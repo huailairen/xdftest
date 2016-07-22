@@ -1,0 +1,4 @@
+#!/bin/bash
+export MYSQL_PORT_3306_TCP_ADDR=${MYSQL_PORT_3306_TCP_ADDR}\;port\=${MYSQL_PORT_3306_TCP_PORT}
+exec "$@"
+
