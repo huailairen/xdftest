@@ -6,7 +6,3 @@ FROM daocloud.io/php:5.6-apache
 RUN docker-php-ext-install pdo_mysql
 
 # /var/www/html/ 为 Apache 目录
-COPY . /var/www/html/
-COPY setenv.sh /
-RUN  chmod a+x /setenv.sh
-ENTRYPOINT ["/setenv.sh”]
